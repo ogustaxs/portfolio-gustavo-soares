@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio- Gustavo Soares</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <nav class="nav-bar">
+        <div class="nav-container">
+            <div class="nav-text">
+                <h1><span>Dev</span>Portfolio</h1>
+            </div>
+            <ul class="list">
+                <a href="#banner">
+                    <li data-translate="list-inicio">inico</li>
+                </a>
+                <a href="#about-me">
+                    <li data-translate="list-sobre">sobre</li>
+                </a>
+                <a href="#skills">
+                    <li data-translate="list-habilidades">habiliades</li>
+                </a>
+                <a href="#projects">
+                    <li data-translate="list-projetos">projetos</li>
+                </a>
+                <a href="#contact">
+                    <li data-translate="list-contato">contato</li>
+                </a>
+            </ul>
+            <div class="nav-controls">
+                <button id="theme" class="theme-btn" onclick="tema()">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button onclick="alterarIdioma()" id="lang-toggle" class="lang-btn">
+                    <span id="lang-text">EN</span>
+                </button>
+            </div>
+            <!-- <nav id="menu">
+                <ul>
+                    <li>fewfe</li>
+                    <li>fefe</li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </nav> -->
+        </div>
+    </nav>
+
+    <section id="banner">
+        <div class="hero-background">
+            <div class="hero-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+        <div class="desc-texts-banner">
+            <div class="text">
+                <h1 data-translate="title-banner">Olá, eu sou <br> <span id="digitar">Gustavo Soares</span> </h1>
+                <p data-translate="desc-dev-p">Desenvolvedor Full Stack</p>
+                <div class="buttons-banner">
+                    <a href="#about-me" class="cta-btn primary" data-translate="hero-cta">Conheça meu trabalho</a>
+                    <a href="#contact" class="cta-btn secondary" data-translate="hero-contact">Entre em contato</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-container">
+                    <img class="photo" src="imgs/photo-me.jpg" alt="">
+                    <div class="image-decoration"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: About -->
+
+    <section id="about-me" class="about">
+        <div class="container">
+            <h2 data-translate="title-about" class="title-about">Sobre mim</h2>
+            <div class="about-card">
+                <div class="about-text">
+                    <p data-translate="desc-p-about1">Sou estudante de Desenvolvimento de Sistemas , apaixonado por
+                        tecnologia e
+                        programação. <br> Estou sempre
+                        em busca de aprender novas ferramentas e aprimorar minhas habiliades em front-end <br> e
+                        back-end. </p>
+                    <p data-translate="desc-p-about2">Meu objetivo é crescer como desenvolvedor , conquistar uma vaga de
+                        estágio na área de T.I <br> e,
+                        ao longo da minha
+                        trajetória , contribuir para projetos que unem criatividade , funcionalidade e impacto real.</p>
+                    <div class="about-status">
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label" data-translate="stat-projects">Projetos</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">2+</span>
+                            <span class="stat-label" data-translate="stat-years">Anos</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label" data-translate="stat-satisfaction">Satisfação</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SECTION: Skills -->
+
+    <section id="skills" class="skills">
+        <div class="title-skills">
+            <h1 data-translate="habilidade" class="title-skills">Habilidades</h1>
+        </div>
+        <div class="skills-container">
+            <div class="skill-card">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" fill="#0EA5E9">
+                    <path
+                        d="M128 96L162.9 491.8L319.5 544L477.1 491.8L512 96L128 96zM436.2 223.9L252.4 223.9L256.5 273.3L432.1 273.3L418.5 421.7L320.6 448.7L320.6 449L319.5 449L220.8 421.7L214.8 345.9L262.5 345.9L266 384L319.5 398.5L373.2 384L379.2 321.8L212.3 321.8L199.5 176.2L440.6 176.2L436.2 223.9z" />
+                </svg>
+                <h3>HTML</h3>
+                <p data-translate="avancado">Avançado</p>
+            </div>
+
+            <div class="skill-card">
+                <svg xmlns="https://www.w3.org/2000/svg" fill="#0EA5E9" viewBox="0 0 640 640">
+                    <path
+                        d="M472.3 96L96 96L96 472.3C96 491.3 103.6 509.5 117 523C130.4 536.5 148.7 544 167.7 544L472.3 544C491.3 544 509.5 536.4 523 523C536.5 509.6 544 491.3 544 472.3L544 167.7C544 148.7 536.4 130.5 523 117C509.6 103.5 491.3 96 472.3 96zM428.4 495.4C420.7 486.9 416.7 474.7 416.4 458.8L447.7 458.8C447.9 472.9 452.8 479.9 462.5 479.9C467.4 479.9 470.9 478.3 473 475.2C475 472.1 476 467.2 476 460.4C476 455 474.7 450.5 472 447C468.5 442.8 463.9 439.5 458.8 437.5L447.2 432C436.9 427.1 429.4 421.2 424.7 414.4C420.2 407.6 418 398.1 418 386C418 372.4 422 361.4 429.8 352.9C437.9 344.4 448.9 340.2 463 340.2C476.6 340.2 487.1 344.4 494.5 352.7C502 361.1 506 373 506.3 388.6L476.2 388.6C476.4 383.5 475.3 378.4 473.2 373.8C471.5 370.4 468.2 368.7 463.2 368.7C454.4 368.7 450 373.9 450 384.4C450 389.7 451.1 393.8 453.2 397C456.3 400.5 460.2 403.2 464.6 404.8L475.7 409.7C487.2 415 495.4 421.4 500.5 429.1C505.6 436.8 508.1 447.1 508.1 460.1C508.1 475.6 504.1 487.5 495.8 495.8C487.6 504.1 476.3 508.3 461.7 508.3C447.1 508.3 436.1 504.1 428.3 495.6zM327.4 495.4C319.7 486.9 315.7 474.7 315.4 458.8L346.7 458.8C346.9 472.9 351.8 479.9 361.5 479.9C366.4 479.9 369.9 478.3 371.9 475.2C373.9 472.1 374.9 467.2 374.9 460.4C374.9 455 373.6 450.5 371 447C367.5 442.8 362.9 439.5 357.8 437.5L346.2 432C335.9 427.1 328.4 421.2 323.7 414.4C319.2 407.6 317 398.1 317 386C317 372.4 321 361.4 328.8 352.9C336.9 344.4 347.9 340.2 362 340.2C375.6 340.2 386.1 344.4 393.4 352.7C401 361.1 404.9 373 405.3 388.6L375.2 388.6C375.4 383.5 374.3 378.4 372.2 373.8C370.5 370.4 367.2 368.7 362.2 368.7C353.4 368.7 349 373.9 349 384.4C349 389.7 350.1 393.8 352.2 397C355.3 400.5 359.2 403.2 363.6 404.8L374.7 409.7C386.2 415 394.4 421.4 399.5 429.1C404.6 436.8 407.1 447.1 407.1 460.1C407.1 475.6 403 487.5 394.8 495.8C386.6 504.1 375.3 508.3 360.7 508.3C346.1 508.3 335.1 504.1 327.3 495.6zM221.8 496.5C213.4 488.8 209.3 477.3 209.3 462L209.3 386.6C209.3 371.4 213.7 359.9 222.5 352C231.4 344.2 243.2 340.2 257.7 340.2C271.8 340.2 282.9 344.2 291.1 352.2C299.4 360.2 303.6 372.2 303.6 388.1L303.6 394.1L270.5 394.1L270.5 388.3C270.5 382.2 269.2 377.6 266.5 374.7C265.4 373.2 263.9 372 262.2 371.2C260.5 370.4 258.7 370 256.8 370.1C251.4 370.1 247.6 371.9 245.4 375.7C243.1 380.9 242.1 386.5 242.4 392.1L242.4 457.6C242.4 471.3 247.2 478.2 256.8 478.4C261.3 478.4 264.7 476.8 267 473.6C269.5 469.5 270.7 464.8 270.5 460L270.5 455.1L303.6 455.1L303.6 460.2C303.6 470.8 301.5 479.7 297.4 486.8C293.4 493.7 287.5 499.3 280.3 502.8C272.6 506.5 264.2 508.3 255.7 508.1C241.5 508.1 230.2 504.2 221.9 496.5z" />
+                </svg>
+                <h3>CSS</h3>
+                <p data-translate="intermediario">Intermediário</p>
+            </div>
+
+            <div class="skill-card">
+                <svg xmlns="https://www.w3.org/2000/svg" fill="#0EA5E9" viewBox="0 0 640 640">
+                    <path
+                        d="M544 160C544 124.7 515.3 96 480 96L160 96C124.7 96 96 124.7 96 160L96 480C96 515.3 124.7 544 160 544L480 544C515.3 544 544 515.3 544 480L544 160zM276.9 508.9C243.2 508.9 223.7 491.5 213.7 470.4L248 449.7C254.6 461.4 260.6 471.3 275.1 471.3C288.9 471.3 297.7 465.9 297.7 444.8L297.7 301.7L339.8 301.7L339.8 445.4C339.8 489 314.2 508.9 276.9 508.9zM362.7 465.9L397 446.1C406 460.8 417.8 471.7 438.5 471.7C455.9 471.7 467.1 463 467.1 450.9C467.1 436.5 455.7 431.4 436.4 422.9L425.9 418.4C395.5 405.5 375.4 389.2 375.4 354.9C375.4 323.3 399.5 299.3 437 299.3C463.8 299.3 483 308.6 496.8 333L464 354C456.8 341.1 449 336 436.9 336C424.6 336 416.8 343.8 416.8 354C416.8 366.6 424.6 371.7 442.7 379.6L453.2 384.1C489 399.4 509.1 415.1 509.1 450.3C509.1 488.1 479.3 508.9 439.4 508.9C400.3 508.9 375 490.3 362.7 465.9z" />
+                </svg>
+                <h3>JavaScript</h3>
+                <p data-translate="basico">Básico</p>
+            </div>
+
+            <div class="skill-card">
+                <svg xmlns="https://www.w3.org/2000/svg" fill="#0EA5E9" viewBox="0 0 640 640">
+                    <path
+                        d="M320 168.5C491.4 168.5 623.2 240.7 623.2 320C623.2 399.3 491.3 471.5 320 471.5C148.6 471.5 16.8 399.3 16.8 320C16.8 240.7 148.7 168.5 320 168.5zM320 151.7C143.3 151.7 0 227 0 320C0 413 143.3 488.3 320 488.3C496.7 488.3 640 413 640 320C640 227 496.7 151.7 320 151.7zM218.2 306.5C210.3 347 182.4 342.8 148.1 342.8L161.8 272.2C199.8 272.2 225.6 268.1 218.2 306.5zM97.4 414.3L134.1 414.3L142.8 369.5C183.9 369.5 209.4 372.5 233 350.4C259.1 326.4 265.9 283.7 247.3 262.3C237.6 251.1 222 245.6 200.8 245.6L130.1 245.6L97.4 414.3zM283.1 200.7L319.6 200.7L310.9 245.5C342.4 245.5 371.6 243.2 385.7 256.2C400.5 269.8 393.4 287.2 377.4 369.3L340.4 369.3C355.8 289.9 358.7 283.3 353.1 277.3C347.7 271.5 335.4 272.7 305.7 272.7L286.9 369.3L250.4 369.3L283.1 200.7zM505 306.5C497 347.6 468.3 342.8 434.9 342.8L448.6 272.2C486.8 272.2 512.4 268.1 505 306.5zM384.2 414.3L421 414.3L429.7 369.5C472.9 369.5 496.8 372 519.9 350.4C546 326.4 552.8 283.7 534.2 262.3C524.5 251.1 508.9 245.6 487.7 245.6L417 245.6L384.2 414.3z" />
+                </svg>
+                <h3>PHP</h3>
+                <p data-translate="em-aprendizado">Em aprendizado</p>
+            </div>
+
+            <div class="skill-card">
+                <svg xmlns="https://www.w3.org/2000/svg" fill="#0EA5E9" viewBox="0 0 640 640">
+                    <path
+                        d="M535.8 264.5C528.1 233.6 513.5 210.3 482.4 210.3L442.3 210.3L442.3 257.7C442.3 294.5 411.1 325.5 375.5 325.5L268.7 325.5C239.5 325.5 215.3 350.5 215.3 379.8L215.3 481.6C215.3 510.6 240.5 527.6 268.7 535.9C302.5 545.8 335 547.6 375.5 535.9C402.4 528.1 428.9 512.4 428.9 481.6L428.9 440.9L322.2 440.9L322.2 427.3L482.4 427.3C513.5 427.3 525 405.6 535.8 373.1C547 339.6 546.5 307.4 535.8 264.5zM382.2 508.7C374.6 509.2 367.3 505.5 363.3 499C359.4 492.4 359.4 484.3 363.3 477.7C367.3 471.2 374.6 467.5 382.2 468C389.8 467.5 397.1 471.2 401.1 477.7C405 484.3 405 492.4 401.1 499C397.1 505.5 389.8 509.2 382.2 508.7zM263.8 312.1L370.6 312.1C400.3 312.1 424 287.6 424 257.8L424 155.9C424 126.9 399.6 105.2 370.6 100.3C334.8 94.4 295.9 94.7 263.8 100.4C218.6 108.4 210.4 125.1 210.4 156L210.4 196.7L317.3 196.7L317.3 210.3L170.3 210.3C139.2 210.3 112 229 103.5 264.5C93.7 305.2 93.3 330.6 103.5 373.1C111.1 404.7 129.2 427.3 160.3 427.3L197 427.3L197 378.5C197 343.2 227.5 312.1 263.8 312.1zM257.2 128.7C268.5 128.7 277.6 137.8 277.6 149.1C277.6 160.4 268.5 169.5 257.2 169.5C245.9 169.5 236.8 160.4 236.8 149.1C236.8 137.8 245.9 128.7 257.2 128.7z" />
+                </svg>
+                <h3>Python</h3>
+                <p data-translate="basico">Básico</p>
+            </div>
+
+            <div class="skill-card">
+                <svg xmlns="https://www.w3.org/2000/svg" fill="#0EA5E9" viewBox="0 0 640 640">
+
+                    <path
+                        d="M544 269.8C529.2 279.6 512.2 287.5 494.5 293.8C447.5 310.6 385.8 320 320 320C254.2 320 192.4 310.5 145.5 293.8C127.9 287.5 110.8 279.6 96 269.8L96 352C96 396.2 196.3 432 320 432C443.7 432 544 396.2 544 352L544 269.8zM544 192L544 144C544 99.8 443.7 64 320 64C196.3 64 96 99.8 96 144L96 192C96 236.2 196.3 272 320 272C443.7 272 544 236.2 544 192zM494.5 453.8C447.6 470.5 385.9 480 320 480C254.1 480 192.4 470.5 145.5 453.8C127.9 447.5 110.8 439.6 96 429.8L96 496C96 540.2 196.3 576 320 576C443.7 576 544 540.2 544 496L544 429.8C529.2 439.6 512.2 447.5 494.5 453.8z" />
+                </svg>
+                </svg>
+                <h3>MySQL</h3>
+                <p data-translate="intermediario">Intermediário</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: Projetos -->
+
+    <section id="projects" class="projects">
+        <div class="content">
+            <h2 data-translate="title-project" class="title-project">Projetos</h2>
+            <div class="projects-grid">
+                <a href="https://ogustaxs.github.io/add-and-remove---list/">
+                    <div class="project-card">
+                        <h3 data-translate="title1">Itens de uma lista</h3>
+                        <p data-translate="desc-1">Aplicação simples e funcional desenvolvida em JavaScript para
+                            gerenciar tarefas do dia a dia. Permite adicionar, remover e visualizar itens.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JAVASCRPT</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://ogustaxs.github.io/Login-Spotify/">
+                    <div class="project-card">
+                        <h3 data-translate="title2">Tela de login Spotify</h3>
+                        <p data-translate="desc-2">Projeto inspirado na interface de autenticação recriada com base no Spotify, utilizando HTML e CSS. Foco em design e usabilidade.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://ogustaxs.github.io/TabelaImc/">
+                    <div class="project-card">
+                        <h3 data-translate="title3">Calculadora de IMC</h3>
+                        <p data-translate="desc-3">Ferramenta interativa que calcula o Índice de Massa Corporal (IMC) de
+                            forma rápida e precisa. Desenvolvida durante um curso na Udemy</p>
+                        <div class="project-tech">
+                            <span>JAVASCRPT</span>
+                            <span>CSS</span>
+                            <span>HTML</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="hidden-projects" id="hidden-projects" style="display: none;">
+                <a href="https://ogustaxs.github.io/formulario-php/">
+                    <div class="project-card">
+                        <h3 data-translate="title4">Agendamento de consulta</h3>
+                        <p data-translate="desc-4"> Sistema web desenvolvido em PHP e MySQL que permite o agendamento de consultas de forma prática e eficiente. Inclui validação de dados e exibição dinâmica das informações cadastradas.
+                        </p></p>
+                        <div class="project-tech">
+                            <span>MYSQL</span>
+                            <span>PHP</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://ogustaxs.github.io/SlideShow/">
+                    <div class="project-card">
+                        <h3 data-translate="title5">SlideShow</h3>
+                        <p data-translate="desc-5">Projeto visual e interativo que exibe imagens de forma dinâmica por meio de transições automáticas e controles manuais. Desenvolvido com HTML, CSS e JavaScript puro.</p>
+                        <div class="project-tech">
+                            <span>JAVASCRPT</span>
+                            <span>CSS</span>
+                            <span>HTML</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://ogustaxs.github.io/Starbucks/">
+                    <div class="project-card">
+                        <h3 data-translate="title6">Reprodução de site - Starbucks</h3>
+                        <p data-translate="desc-6">  Projeto inspirado no site oficial da Starbucks, recriado para fins de estudo. Foco em responsividade, design moderno e organização de layout com HTML e CSS.</p>
+                        <div class="project-tech">
+                            <span>CSS</span>
+                            <span>HTML</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="button">
+                <button class="button-view-more" id="toggleBtn" data-translate="ver-mais" onclick="toggleProjects()">ver mais</button>
+            </div>
+        </div>
+
+        <div class="redes-socials">
+            <div class="content-socials">
+                <h2 class="title-social" data-translate="redes-sociais-title">Redes sociais</h2>
+                <div class="social-highlight">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="highlight-content">
+                            <h3 data-translate="instagram-series-title">Minissérie sobre T.I.</h3>
+                            <p data-translate="instagram-series-desc">Conteúdo educativo sobre tecnologia, programação e
+                                carreira em T.I. no Instagram</p>
+                            <a href="https://www.instagram.com/reel/DMGj4flNaWF/?utm_source=ig_web_copy_link"
+                                class="social-btn instagram" data-translate="view-series">Ver Minissérie</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-grid">
+                    <div class="social-card">
+                        <i class="fab fa-instagram"></i>
+                        <h4>Instagram</h4>
+                        <p data-translate="instagram-desc">Dicas de programação e carreira</p>
+                        <a href="https://www.instagram.com/gustaavo.dev?igsh=NTFvNGpwdm43aXR1&utm_source=qr"
+                            class="social-link">@gustaavo.dev</a>
+                    </div>
+                    <div class="social-card">
+                        <i class="fab fa-linkedin"></i>
+                        <h4>LinkedIn</h4>
+                        <p data-translate="linkedin-desc">Networking profissional</p>
+                        <a href="https://www.linkedin.com/in/gustavo-soaress/"
+                            class="social-link">linkedin.com/in/gustavosoares</a>
+                    </div>
+                    <div class="social-card">
+                        <i class="fab fa-github"></i>
+                        <h4>GitHub</h4>
+                        <p data-translate="github-desc">Projetos e código aberto</p>
+                        <a href="https://github.com/ogustaxs" class="social-link">github.com/ogustaaxs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="education">
+        <div class="container">
+            <h2 data-translate="education-title" class="education-title">Formação Acadêmica</h2>
+            <div class="education-timeline">
+                <div class="education-item">
+                    <div class="education-year">2024</div>
+                    <div class="education-content">
+                        <h3 data-translate="edu1-title">Técnico em Informática</h3>
+                        <p data-translate="edu1-institution">Colégio Cotemig Floresta - Tarde</p>
+                        <p data-translate="edu1-desc">Formação em andamento. Data prevista de conclusão: Dez, 2026</p>
+                    </div>
+                </div>
+                <div class="education-item">
+                    <div class="education-year">2025</div>
+                    <div class="education-content">
+                        <h3 data-translate="edu2-title">Técnico em Desenvolvimento de Sistemas</h3>
+                        <p data-translate="edu2-institution">Proz Educação Venda Nova - Noite</p>
+                        <p data-translate="edu2-desc">Formação em andamento. Data prevista de conclusão : Abr , 2027</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 data-translate="contact-title" class="title-contact">Entre em Contato</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>gustasaores1608@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>(31) 99826-1387</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <span>Gustavo Soares</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <span>github.com/ogustaaxs</span>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" id="name" placeholder="Nome" data-translate-placeholder="form-name" required>
+                    <input type="email" placeholder="Email" id="email" data-translate-placeholder="form-email" required>
+                    <textarea placeholder="Mensagem" id="assunto" data-translate-placeholder="form-message"
+                        required></textarea>
+                    <button type="submit" data-translate="form-submit">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <footer>
+        <p data-translate="footer-lyrics">© 2025 Gustavo Soares. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
