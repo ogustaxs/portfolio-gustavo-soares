@@ -351,7 +351,7 @@ span {
 }
 
 .cta-btn.primary {
-    background: rgb(255, 0, 0);
+    background: white;
     color: var(--secondary-blue);
     box-shadow: var(--shadow-colored);
     text-align: center;
